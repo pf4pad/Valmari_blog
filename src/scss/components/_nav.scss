@@ -2,7 +2,9 @@
   &__list {
     display: flex;
     align-self: center;
-
+    justify-content: space-between;
+    max-width: 1040px;
+    margin: auto;
     @include tablet {
       flex-direction: column;
     }
@@ -23,7 +25,7 @@
     position: relative;
     outline: none;
     font: var(--small-book);
-    color: var(--color-white);
+    color: var(--color-main);
     transition: opacity 0.3s ease-in-out;
 
     &::before {

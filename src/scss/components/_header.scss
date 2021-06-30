@@ -6,11 +6,10 @@
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: var(--color-eastbay);
+  background-color: var(--color-white);
 
   &__container {
     --paddings: 15px;
-
     position: relative;
     align-items: center;
     padding: var(--second-offset) var(--paddings);
@@ -30,7 +29,7 @@
   &__left {
     grid-column: 2 span;
   }
-
+  
   &__right {
     display: flex;
     justify-content: flex-end;
@@ -63,7 +62,12 @@
     }
   }
 }
-
+.header__top,
+.header__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .burger {
   --burger-width: 24px;
   --burger-height: 18px;
