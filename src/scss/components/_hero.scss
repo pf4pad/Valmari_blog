@@ -19,7 +19,7 @@
     margin-bottom: var(--second-offset);
     max-width: 50%;
     font: 700 36px / 140% var(--font-family);
-    color: var(--color-white);
+    color: var(--color-main);
 
     @include small-tablet {
       max-width: none;
@@ -30,13 +30,13 @@
     margin: 0;
     margin-bottom: var(--main-offset);
     font: var(--middle-book);
-    color: var(--color-white);
+    color: var(--color-text);
 
     @include small-tablet {
       max-width: none;
     }
    &__team {
-     max-width: 681px;
+     max-width: 670px;
 
      @include small-tablet {
        max-width: none;
@@ -50,7 +50,16 @@
 }
 }
 
-
+.hero__btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--small-offset);
+  
+}
+.hero__btns button + .hero__btns button{
+  margin-right: var(--second-offset);
+}
 
 .hero__list {
   position: absolute;
@@ -85,6 +94,6 @@
 
 .hero__text {
   color: var(--color-text);
-font: var(--prehigh-book);
+  font: var(--prehigh-book);
   
 }

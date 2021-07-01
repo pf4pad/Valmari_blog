@@ -65,7 +65,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1210px;
+  max-width: 1230px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -102,11 +102,14 @@ a {
 
   &--primary {
     color: var(--color-white);
-    background-color: var(--color-accent);
+    background-color: var(--color-main);
+    width: 286px;
+    height: 67px;
 
     @include desktop {
       &:hover {
-        background-color: var(--color-accent-hover);
+        background-color: var(--color-bg);
+        border: 1px solid var(--color-main);
       }
     }
 
@@ -117,7 +120,11 @@ a {
 
   &--secondary {
     color: var(--color-white);
-    background-color: var(--color-main);
+    background-color: transparent;
+    border: 1px solid var(--color-main);
+    width: 285px;
+    height: 66px;
+
 
     @include desktop {
       &:hover {
