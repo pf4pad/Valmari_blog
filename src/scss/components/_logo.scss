@@ -1,5 +1,37 @@
-.logo {
-  font: var(--middle-high-bold);
-  line-height: 1;
-  color: var(--color-white);
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 226px;
+  height: 63px;
+  cursor: pointer;
+}
+
+.logo svg{
+  width: 63px;
+  height: 63px;
+}
+.logo span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 100%;
+  height: 63px;
+  
+}
+
+.logo__sci svg{
+  width: 28px;
+  height: 28px;
+  margin-right: 22px;
+}
+
+.logo__phone{
+    display: flex;
+  align-items: center;
+}
+
+.logo__phone svg{
+margin-right: 22px;
 }

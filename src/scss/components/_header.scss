@@ -26,14 +26,20 @@
     }
   }
 
-  &__left {
-    grid-column: 2 span;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-bg);
   }
   
+  &__left{
+   padding: var(--small-offset) var(--paddings);
+  }
   &__right {
     display: flex;
     justify-content: flex-end;
-    grid-column: 10 span;
+    
 
     @include tablet {
       align-items: center;
@@ -62,12 +68,20 @@
     }
   }
 }
-.header__top,
+.sci__phone,
+.sci__list,
 .header__bottom{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.sci__phone{
+  margin-right: 65px;
+}
+.header__bottom {
+  padding: var(--second-offset) var(--paddings);
+}
+
 .burger {
   --burger-width: 24px;
   --burger-height: 18px;
