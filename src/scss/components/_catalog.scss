@@ -1,16 +1,13 @@
 @import "../mixins";
 
 .catalog {
-  padding: var(--big-offset) 0;
-
-  &__left {
-    grid-column: 3 span;
-
-    @include tablet {
-      display: none;
-    }
+  
+  background-image: url('../img/bg-points.  png');
+    background-repeat: no-repeat;
+    background-position: right, top;
+  &__container {
+  padding: 350px 0 175px ;
   }
-
   &__reset {
     outline: none;
     transition: color 0.3s ease-in-out;
@@ -41,152 +38,95 @@
     }
   }
 
-  &__subtitle {
-    margin: 0;
-    margin-bottom: var(--second-offset);
-    font: var(--prehigh-book);
-  }
+  
+}
+.catalog__title{
+  text-align: center;
+  font: var(--prehigh-regular);
+  color:var(--color-text);
+  margin-bottom: 77px;
+}
+// .catalog__list {
+  
 
-  &__caption {
-    display: block;
-    margin-bottom: var(--small-offset);
-    font: var(--middle-book);
-    color: var(--color-main);
-  }
+//  }
 
-  &__prop {
-    margin-bottom: var(--second-offset);
-  }
 
-  &__prop-checkboxes {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__apply {
-    margin-bottom: var(--second-offset);
-    width: 100%;
-  }
-
-  &__more {
-    margin-top: var(--big-offset);
-  }
+.card {
+  min-height: 584px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  width: 360px;
+}
+.card__info{
+padding: 16px 16px 0 16px;
 }
 
-.catalog-list {
-  grid-template-columns: repeat(9, 1fr);
-
-  &__item {
-    grid-column: 3 span;
-  }
-
-  @include mobile {
-    grid-template-columns: repeat(4, 1fr);
-
-    &__item {
-      grid-column: 4 span;
-    }
-  }
+.card__spec {
+  display: block;
+  font: var(--middle-regular);
+  color:var(--color-text);
+  margin-bottom: 14px;
 }
 
-.catalog-filters {
-  border-radius: 4px;
-  padding: var(--second-offset);
-  background-color: var(--color-bg);
-
-  &__btns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.card-title {
+  font: var(--prehigh-regular);
+  color:var(--color-qovernorbay);
+  margin-bottom: 23px;
+}
+.card__type{
+  display: block;
+  text-align: center;
+  background: #4340B4;
+  border-radius: 9px;
+  font: var(--middle-regular);
+  color:var(--color-white);
+  width: 166px;
+  padding: 8px 0px ;
+  margin-bottom: 24px;
+  
+}
+.card__date {
+  font: var(--middle-regular);
+  color:var(--color-text);
 }
 
-.catalog-price {
-  &__wrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 8px;
-      bottom: 8px;
-      width: 1px;
-      height: 34px;
-      background-color: var(--color-gray);
-      transform: translateX(-50%);
-    }
-  }
-
-  &__input {
-    outline: none;
-    border: 1px solid var(--color-gray);
-    width: 50%;
-    height: 50px;
-    font: var(--middle-book);
-    text-align: center;
-    color: var(--color-main);
-    background-color: transparent;
-
-    &:first-child {
-      border-right: none;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
-    }
-
-    &:last-child {
-      border-left: none;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-    }
-  }
-
-  .noUi-horizontal {
-    height: 2px;
-  }
-
-  .noUi-target {
-    border: none;
-    box-shadow: none;
-    background-color: var(--color-main);
-  }
-
-  .noUi-connect {
-    background-color: var(--color-main);
-  }
-
-  .noUi-horizontal .noUi-handle {
-    top: -8px;
-    width: 3px;
-    height: 18px;
-  }
-
-  .noUi-handle {
-    right: 0;
-    border: none;
-    border-radius: 100px;
-    box-shadow: none;
-    background-color: var(--color-main);
-    cursor: pointer;
-  }
-
-  .noUi-handle::after,
-  .noUi-handle::before {
-    display: none;
-  }
-
-  .noUi-handle-lower {
-    right: -3px;
-  }
+.card__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+.card__about-text{
+  border-left: 2px solid var(--color-qovernorbay);
+  padding-left: 9px;
+}
+.card__about-img{
+  max-width: 135px;
+}
+.card__members {
+  display: block;
+  font: var(--middle-book);
+  color:var(--color-text);
+  margin-bottom: 20px;
+}
+.btn--catalog__primary {
+  font: var(--middle-regular);
+  color: var(--color-white);
+  background-color: var(--color-qovernorbay);
+  
 }
 
-.noUi-handle:focus {
-  outline: none;
-  background-color: var(--color-accent);
+.btn--catalog__secondary {
+  text-align: center;
+  font: var(--middle-regular);
+  color: var(--color-qovernorbay);
+  background: rgba(83, 81, 196, 0.1);
+  
 }
 
-.catalog-price__input.focus-visible {
-  background-color: var(--color-cameo);
+.card__green{
+  width: 200px;
+  height: 250px;
+  background-color: green;
 }

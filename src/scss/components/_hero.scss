@@ -2,14 +2,15 @@
 
 .hero {
   position: relative;
-  padding-top: 153px;
+  padding-top: 193px;
   background-color: var(--color-bg);
+  height: 753px;
 
   &__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      --paddings: 15px;
+      position: relative;
+      align-items: center;
     
   }
   
@@ -49,12 +50,15 @@
   }
 }
 }
-
+.hero__about, .hero__team {
+  width: 50%;
+}
 .hero__btns{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: var(--small-offset);
+  flex-wrap: wrap;
   
 }
 .hero__btns button + .hero__btns button{
@@ -63,12 +67,12 @@
 
 .hero__list {
   position: absolute;
-  bottom: -210px;
+  bottom: -250px;
   left: 0;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 12 span;
   background: #FFFFFF;
   box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
   border-radius: 4px;
@@ -76,6 +80,7 @@
 
 
 }
+
 
 .hero__item {
   display: flex;
